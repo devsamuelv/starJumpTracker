@@ -20,9 +20,8 @@ class FirstHomePageState extends State<FirstHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Icon(Icons.star_border, size: 150.0, color: Colors.pinkAccent),
-      )
-    );
+        body: Center(
+      child: Icon(Icons.star_border, size: 150.0, color: Colors.pinkAccent),
+    ));
   }
 }

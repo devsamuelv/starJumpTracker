@@ -39,11 +39,11 @@ class _MyHomePageState extends State<MyHomePage>
     // super.initState();
     TabController controller = new TabController(length: 2, vsync: this);
 
-    @override
-    void dispose() {
-      controller.dispose();
-      super.dispose();
-    }
+    // @override
+    // void dispose() {
+    //   controller.dispose();
+    //   super.dispose();
+    // }
 
     return Scaffold(
         appBar: AppBar(
@@ -52,19 +52,19 @@ class _MyHomePageState extends State<MyHomePage>
           title: Text(widget.title),
         ),
         bottomNavigationBar: new Material(
-          color: Colors.blueAccent,
-          child: new TabBar(
-          controller: controller,
-          tabs: <Tab>[
-            new Tab(icon: Icon(Icons.dashboard)),
-            new Tab(icon: Icon(Icons.assignment_ind))
-          ],
-        )),
+            color: Colors.blueAccent,
+            child: new TabBar(
+              controller: controller,
+              tabs: <Tab>[
+                new Tab(icon: Icon(Icons.dashboard)),
+                new Tab(icon: Icon(Icons.assignment_ind))
+              ],
+            )),
         body: new TabBarView(
           controller: controller,
           children: <Widget>[
             new firstPage.FirstHomePage(),
-            new secondPage(),
+            new SecondPage(),
           ],
         ));
   }

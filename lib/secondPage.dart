@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class secondPage extends StatelessWidget {
+class SecondPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new Container(
@@ -18,10 +18,7 @@ class secondPage extends StatelessWidget {
                 )
               ],
               rows: [
-                DataRow(cells: [
-                  DataCell(Text('Cool')),
-                  DataCell(Text('1'))
-                ])
+                DataRow(cells: [DataCell(Text('Cool')), DataCell(Text('1'))])
               ],
             ),
             RaisedButton(
